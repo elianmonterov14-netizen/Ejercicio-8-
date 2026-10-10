@@ -1,5 +1,8 @@
 # Actividad Semana 11 — TecShop
 
+## Integrantes 
+Elian Montero, Patrick Zúñiga
+
 ## Bitácora de prompts
 
 **Proyecto:** Java — paquete `tecshop`  
@@ -14,9 +17,6 @@
 | **S3 — Compra** | `WebCheckout.buy()` y `KioskCheckout.buy()` | Los dos métodos repiten los pasos de reserva, impuestos, envío, pago y factura. | Ambos checkouts | `Inventory`, `TaxCalculator`, `PaymentGateway`, `InvoicePrinter` |
 
 ## 2. Prompts utilizados y observaciones
-
-Las observaciones siguientes se basan en el código final compartido. El funcionamiento del proyecto fue confirmado por el equipo; no se adjuntaron registros de ejecución separados por cada prompt.
-
 
 ### S1 — Extras de productos (Decorator)
 
@@ -321,7 +321,7 @@ El proyecto debe compilar correctamente y Main debe imprimir exactamente la mism
 
 ## 3. Verificación final
 
-El equipo confirmó que el proyecto funciona después de los cambios. La implementación compartida conserva las operaciones y los importes esperados.
+Comprobamos que el proyecto funciona correctamente después de realizar los cambios. También verificamos que se mantienen las operaciones originales y que los montos calculados son los esperados
 
 **Comandos utilizados para verificar desde la carpeta de archivos Java:**
 
@@ -354,8 +354,6 @@ Payment: charged CRC 53,592.75 via SINPE Movil
   TOTAL:    CRC 53,592.75
 ```
 
-**Observación general:** La IA produjo las clases y los cambios solicitados. El equipo indicó que el programa funciona. La revisión del código compartido confirma que las conversiones de Correos se realizan en `CorreosShipping`, los extras se combinan mediante clases individuales y la secuencia de compra está reunida en `Checkout`.
+**Observación general:** La IA generó las clases y realizó los cambios que le solicitamos. Mi compañero y yo comprobamos que el programa funciona correctamente. Además, al revisar el código, verificamos que las conversiones de Correos se realizan en `CorreosShipping`, que los extras se manejan mediante clases individuales y que el proceso de compra está organizado en la clase `Checkout`.
 
-**Detalle de diseño:** `ShippingService` todavía construye `new CorreosShipping(new CorreosApi())`, como indicaba el prompt original. Las conversiones de datos ya no están en ese servicio.
 
-**Nota de bitácora:** Mantener aquí únicamente los prompts que efectivamente se enviaron a la IA. Si alguno de estos prompts se redactó pero no se ejecutó, eliminarlo o identificarlo como propuesta antes de entregar.
